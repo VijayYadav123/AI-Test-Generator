@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Test Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>AI Test Generator</h1>
+            <p>Local Privacy • Powered by Llama 3.2</p>
+        </header>
+
+        <main id="chat-window">
+            <div class="welcome-message">
+                <h2>Ready to verify your code?</h2>
+                <p>Paste your logic or requirements below to generate a test suite.</p>
+            </div>
+            <!-- Messages will be injected here -->
+        </main>
+
+        <div class="input-area">
+            <textarea id="user-input" placeholder="Paste your code or logic here..."></textarea>
+            <button id="send-btn">
+                <span class="icon">➤</span> Generate
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
